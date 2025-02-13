@@ -3,24 +3,24 @@ name: Update LeetCode Stats
 on:
   schedule:
     - cron: "0 0 * * *"  # Запуск каждый день в 00:00 UTC
-  workflow_dispatch:  # Возможность запустить вручную
+  workflow_dispatch:  # Позволяет запускать вручную
 
 jobs:
   update-readme:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout репозитория
+      - name: 📥 Клонируем репозиторий
         uses: actions/checkout@v3
 
-      - name: Установка Python
+      - name: 🐍 Устанавливаем Python
         uses: actions/setup-python@v3
         with:
-          python-version: '3.10'
+          python-version: '3.x'
 
-      - name: Установка зависимостей
+      - name: 🔧 Устанавливаем зависимости
         run: pip install requests
 
-      - name: Запуск скрипта для обновления статистики
+      - name: 🚀 Запускаем Python-скрипт
         run: python update_leetcode.py
 
       - name: 📤 Коммит и пуш обновленного README.md
@@ -31,5 +31,5 @@ jobs:
           git config --global user.email "actions@github.com"
           git remote set-url origin https://x-access-token:${GH_PAT}@github.com/${{ github.repository }}.git
           git add README.md
-          git commit -m "Обновление статистики LeetCode"
+          git commit -m "Обновление статистики LeetCode" || exit 0
           git push origin main
