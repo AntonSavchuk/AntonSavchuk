@@ -5,12 +5,17 @@ on:
     - cron: "0 0 * * *"  # Запуск каждый день в 00:00 UTC
   workflow_dispatch:  # Позволяет запускать вручную
 
+permissions:
+  contents: write  # Даем Actions права на запись
+
 jobs:
   update-readme:
     runs-on: ubuntu-latest
     steps:
       - name: 📥 Клонируем репозиторий
         uses: actions/checkout@v3
+        with:
+          persist-credentials: false  # Отключаем стандартный GITHUB_TOKEN
 
       - name: 🐍 Устанавливаем Python
         uses: actions/setup-python@v3
