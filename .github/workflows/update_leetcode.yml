@@ -15,7 +15,7 @@ jobs:
       - name: Установка Python
         uses: actions/setup-python@v3
         with:
-          python-version: '3.10'
+          python-version: '3.'
 
       - name: Установка зависимостей
         run: pip install requests
@@ -23,10 +23,13 @@ jobs:
       - name: Запуск скрипта для обновления статистики
         run: python update_leetcode.py
 
-      - name: Коммит и пуш обновленного README.md
+      - name: 📤 Коммит и пуш обновленного README.md
+        env:
+          GH_PAT: ${{ secrets.GH_PAT }}
         run: |
           git config --global user.name "GitHub Actions Bot"
           git config --global user.email "actions@github.com"
+          git remote set-url origin https://x-access-token:${GH_PAT}@github.com/${{ github.repository }}.git
           git add README.md
           git commit -m "Обновление статистики LeetCode"
-          git push
+          git push origin main
