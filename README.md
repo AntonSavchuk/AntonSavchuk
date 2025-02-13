@@ -1,16 +1,23 @@
-## Hi there 👋
+# 👋 Привет, я Антон! 
 
-<!--
-**AntonSavchuk/AntonSavchuk** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+🚀 **Backend-разработчик** | Python | PostgreSQL | RabbitMQ  
 
-Here are some ideas to get you started:
+💡 **Кратко обо мне:**  
+Я увлеченный **backend-разработчик**, который любит разрабатывать **масштабируемые, надежные и высоконагруженные** системы.  
+Моя главная цель — **писать чистый, эффективный код** и строить архитектуру, которая выдержит любые нагрузки.  
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+### 🔧 **Мой стек технологий**  
+- 🐍 **Язык программирования:** Python  
+- 🛢 **Базы данных:** PostgreSQL, Redis  
+- 📡 **Очереди сообщений:** RabbitMQ
+- 🏗 **Фреймворки:** Django
+- 🔄 **DevOps & CI/CD:** Docker, GitHub Actions  
+- 🛠 **Дополнительно:** REST API, GraphQL, WebSockets  
+
+### 🌍 **Как связаться со мной?**  
+📬 Telegram: [@gtfoold](https://t.me/gtfoold)  
+📧 Email: savchuk.anton.s@gmail.com
+
+---
+
+💡 **Всегда открыт к новым вызовам и интересным проектам!** 🚀  
