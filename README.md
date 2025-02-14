@@ -20,7 +20,4 @@
 
 ---
 
-## 📊 Моя статистика LeetCode:
-- 🟢 **Легкий уровень:** `Loading...`
-- 🟡 **Средний уровень:** `Loading...`
-- 🔴 **Сложный уровень:** `Loading...`
+![Leetcode Stats](https://leetcard.jacoblin.cool/gtfoold?theme=transparent)
